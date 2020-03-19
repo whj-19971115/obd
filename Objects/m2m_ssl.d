@@ -1,0 +1,15 @@
+.\objects\m2m_ssl.o: wifi\driver\source\m2m_ssl.c
+.\objects\m2m_ssl.o: .\wifi\driver/include/m2m_ssl.h
+.\objects\m2m_ssl.o: .\wifi\common/include/nm_common.h
+.\objects\m2m_ssl.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\m2m_ssl.o: .\wifi\bsp/include/conf_winc.h
+.\objects\m2m_ssl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\m2m_ssl.o: .\nxpLib\printf.h
+.\objects\m2m_ssl.o: .\wifi\common/include/nm_debug.h
+.\objects\m2m_ssl.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\m2m_ssl.o: .\wifi\driver/include/m2m_types.h
+.\objects\m2m_ssl.o: .\wifi\driver/source/nmdrv.h
+.\objects\m2m_ssl.o: .\wifi\driver/include/ecc_types.h
+.\objects\m2m_ssl.o: .\wifi\socket/include/socket.h
+.\objects\m2m_ssl.o: .\wifi\driver/source/m2m_hif.h
+.\objects\m2m_ssl.o: .\wifi\driver/source/nmasic.h

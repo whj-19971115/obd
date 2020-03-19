@@ -1,0 +1,15 @@
+.\objects\nmdrv.o: wifi\driver\source\nmdrv.c
+.\objects\nmdrv.o: .\wifi\common/include/nm_common.h
+.\objects\nmdrv.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\nmdrv.o: .\wifi\bsp/include/conf_winc.h
+.\objects\nmdrv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\nmdrv.o: .\nxpLib\printf.h
+.\objects\nmdrv.o: .\wifi\common/include/nm_debug.h
+.\objects\nmdrv.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\nmdrv.o: .\wifi\driver/source/nmbus.h
+.\objects\nmdrv.o: .\wifi\bus_wrapper/include/nm_bus_wrapper.h
+.\objects\nmdrv.o: .\wifi\conf_winc.h
+.\objects\nmdrv.o: .\wifi\driver/source/nmdrv.h
+.\objects\nmdrv.o: .\wifi\driver/source/nmasic.h
+.\objects\nmdrv.o: .\wifi\driver/include/m2m_types.h
+.\objects\nmdrv.o: .\wifi\driver/source/nmspi.h

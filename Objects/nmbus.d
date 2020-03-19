@@ -1,0 +1,14 @@
+.\objects\nmbus.o: wifi\driver\source\nmbus.c
+.\objects\nmbus.o: wifi\driver\source\nmbus.h
+.\objects\nmbus.o: .\wifi\common/include/nm_common.h
+.\objects\nmbus.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\nmbus.o: .\wifi\bsp/include/conf_winc.h
+.\objects\nmbus.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\nmbus.o: .\nxpLib\printf.h
+.\objects\nmbus.o: .\wifi\common/include/nm_debug.h
+.\objects\nmbus.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\nmbus.o: .\wifi\bus_wrapper/include/nm_bus_wrapper.h
+.\objects\nmbus.o: .\wifi\conf_winc.h
+.\objects\nmbus.o: wifi\driver\source\nmi2c.h
+.\objects\nmbus.o: wifi\driver\source\nmspi.h
+.\objects\nmbus.o: wifi\driver\source\nmuart.h

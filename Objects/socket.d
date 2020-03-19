@@ -1,0 +1,13 @@
+.\objects\socket.o: wifi\socket\source\socket.c
+.\objects\socket.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\socket.o: .\wifi\bsp/include/conf_winc.h
+.\objects\socket.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\socket.o: .\nxpLib\printf.h
+.\objects\socket.o: .\wifi\socket/include/socket.h
+.\objects\socket.o: .\wifi\common/include/nm_common.h
+.\objects\socket.o: .\wifi\common/include/nm_debug.h
+.\objects\socket.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\socket.o: .\wifi\driver/include/m2m_types.h
+.\objects\socket.o: .\wifi\driver/source/m2m_hif.h
+.\objects\socket.o: .\wifi\socket/source/socket_internal.h
+.\objects\socket.o: .\wifi\socket/include/m2m_socket_host_if.h

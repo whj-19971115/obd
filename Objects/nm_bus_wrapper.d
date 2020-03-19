@@ -1,0 +1,17 @@
+.\objects\nm_bus_wrapper.o: wifi\bus_wrapper\source\nm_bus_wrapper.c
+.\objects\nm_bus_wrapper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\nm_bus_wrapper.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\nm_bus_wrapper.o: .\wifi\bsp/include/conf_winc.h
+.\objects\nm_bus_wrapper.o: .\nxpLib\printf.h
+.\objects\nm_bus_wrapper.o: .\wifi\common/include/nm_common.h
+.\objects\nm_bus_wrapper.o: .\wifi\common/include/nm_debug.h
+.\objects\nm_bus_wrapper.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\nm_bus_wrapper.o: .\wifi\bus_wrapper/include/nm_bus_wrapper.h
+.\objects\nm_bus_wrapper.o: .\wifi\conf_winc.h
+.\objects\nm_bus_wrapper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\nm_bus_wrapper.o: .\nxpLib\gpio.h
+.\objects\nm_bus_wrapper.o: .\nxpLib\spi.h
+.\objects\nm_bus_wrapper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\nm_bus_wrapper.o: .\nxpLib\usertype.h
+.\objects\nm_bus_wrapper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\nm_bus_wrapper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

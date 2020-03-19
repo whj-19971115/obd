@@ -1,0 +1,10 @@
+.\objects\spi_flash.o: wifi\spi_flash\source\spi_flash.c
+.\objects\spi_flash.o: .\wifi\spi_flash/include/spi_flash.h
+.\objects\spi_flash.o: .\wifi\common/include/nm_common.h
+.\objects\spi_flash.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\spi_flash.o: .\wifi\common/include/nm_debug.h
+.\objects\spi_flash.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\spi_flash.o: .\wifi\bus_wrapper/include/nm_bus_wrapper.h
+.\objects\spi_flash.o: .\wifi\driver/source/nmbus.h
+.\objects\spi_flash.o: .\wifi\bus_wrapper/include/nm_bus_wrapper.h
+.\objects\spi_flash.o: .\wifi\driver/source/nmasic.h

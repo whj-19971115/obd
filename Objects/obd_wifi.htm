@@ -1,0 +1,2041 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\obd_wifi.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\obd_wifi.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Mar 19 10:06:14 2020
+<BR><P>
+<H3>Maximum Stack Usage =        872 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+__rt_entry_main &rArr; main &rArr; m2m_wifi_enable_ap &rArr; m2m_wifi_enable_ap_ext &rArr; hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[13]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[13]">NMI_Handler</a><BR>
+ <LI><a href="#[14]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[14]">HardFault_Handler</a><BR>
+ <LI><a href="#[15]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15]">MemManage_Handler</a><BR>
+ <LI><a href="#[16]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[16]">BusFault_Handler</a><BR>
+ <LI><a href="#[17]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[17]">UsageFault_Handler</a><BR>
+ <LI><a href="#[18]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[18]">SVC_Handler</a><BR>
+ <LI><a href="#[19]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[19]">DebugMon_Handler</a><BR>
+ <LI><a href="#[1a]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1a]">PendSV_Handler</a><BR>
+ <LI><a href="#[1b]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1b]">SysTick_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[43]">ADC0_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[44]">ADC1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[16]">BusFault_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6b]">CAN0_Error_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6d]">CAN0_ORed_0_15_MB_IRQHandler</a> from canbus.o(i.CAN0_ORed_0_15_MB_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6e]">CAN0_ORed_16_31_MB_IRQHandler</a> from canbus.o(i.CAN0_ORed_16_31_MB_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6a]">CAN0_ORed_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6c]">CAN0_Wake_Up_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[72]">CAN1_Error_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[74]">CAN1_ORed_0_15_MB_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[71]">CAN1_ORed_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[45]">CMP0_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1c]">DMA0_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[26]">DMA10_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[27]">DMA11_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[28]">DMA12_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[29]">DMA13_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2a]">DMA14_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2b]">DMA15_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1d]">DMA1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1e]">DMA2_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1f]">DMA3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[20]">DMA4_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[21]">DMA5_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[22]">DMA6_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[23]">DMA7_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[24]">DMA8_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[25]">DMA9_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2c]">DMA_Error_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[19]">DebugMon_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[97]">DefaultISR</a> from startup_s32k142.o(.text) referenced 116 times from startup_s32k142.o(RESET)
+ <LI><a href="#[49]">ERM_double_fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[48]">ERM_single_fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[61]">FLEXIO_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[31]">FTFC_Fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2e]">FTFC_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7f]">FTM0_Ch0_Ch1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[80]">FTM0_Ch2_Ch3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[81]">FTM0_Ch4_Ch5_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[82]">FTM0_Ch6_Ch7_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[83]">FTM0_Fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[84]">FTM0_Ovf_Reload_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[85]">FTM1_Ch0_Ch1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[86]">FTM1_Ch2_Ch3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[87]">FTM1_Ch4_Ch5_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[88]">FTM1_Ch6_Ch7_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[89]">FTM1_Fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8a]">FTM1_Ovf_Reload_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8b]">FTM2_Ch0_Ch1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8c]">FTM2_Ch2_Ch3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8d]">FTM2_Ch4_Ch5_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8e]">FTM2_Ch6_Ch7_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[8f]">FTM2_Fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[90]">FTM2_Ovf_Reload_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[91]">FTM3_Ch0_Ch1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[92]">FTM3_Ch2_Ch3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[93]">FTM3_Ch4_Ch5_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[94]">FTM3_Ch6_Ch7_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[95]">FTM3_Fault_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[96]">FTM3_Ovf_Reload_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[14]">HardFault_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[34]">LPI2C0_Master_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[35]">LPI2C0_Slave_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4c]">LPIT0_Ch0_IRQHandler</a> from timer.o(i.LPIT0_Ch0_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4d]">LPIT0_Ch1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4e]">LPIT0_Ch2_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4f]">LPIT0_Ch3_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[36]">LPSPI0_IRQHandler</a> from spi.o(i.LPSPI0_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[37]">LPSPI1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[56]">LPTMR0_IRQHandler</a> from timer.o(i.LPTMR0_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3b]">LPUART0_RxTx_IRQHandler</a> from uart.o(i.LPUART0_RxTx_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3d]">LPUART1_RxTx_IRQHandler</a> from uart.o(i.LPUART1_RxTx_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[30]">LVD_LVW_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2d]">MCM_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[15]">MemManage_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[13]">NMI_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[50]">PDB0_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[60]">PDB1_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[57]">PORTA_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[58]">PORTB_IRQHandler</a> from nm_bsp.o(i.PORTB_IRQHandler) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[59]">PORTC_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5a]">PORTD_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5b]">PORTE_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1a]">PendSV_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[33]">RCM_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4a]">RTC_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[4b]">RTC_Seconds_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[2f]">Read_Collision_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[70]">Reserved100_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[73]">Reserved103_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[75]">Reserved105_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[76]">Reserved106_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[77]">Reserved107_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[78]">Reserved108_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[79]">Reserved109_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7a]">Reserved110_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7b]">Reserved111_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7c]">Reserved112_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7d]">Reserved113_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[7e]">Reserved114_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[38]">Reserved44_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[39]">Reserved45_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3a]">Reserved46_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3c]">Reserved48_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3e]">Reserved50_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[3f]">Reserved51_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[40]">Reserved52_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[41]">Reserved53_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[42]">Reserved54_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[46]">Reserved58_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[47]">Reserved59_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[51]">Reserved69_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[52]">Reserved70_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[53]">Reserved71_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[54]">Reserved72_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5d]">Reserved81_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5e]">Reserved82_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5f]">Reserved83_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[62]">Reserved86_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[63]">Reserved87_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[64]">Reserved88_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[65]">Reserved89_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[66]">Reserved90_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[67]">Reserved91_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[68]">Reserved92_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[69]">Reserved93_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[6f]">Reserved99_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[12]">Reset_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[55]">SCG_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[18]">SVC_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[5c]">SWI_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[1b]">SysTick_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[a]">SystemInit</a> from system_s32k142.o(i.SystemInit) referenced from startup_s32k142.o(.text)
+ <LI><a href="#[17]">UsageFault_Handler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[32]">WDOG_EWM_IRQHandler</a> from startup_s32k142.o(.text) referenced from startup_s32k142.o(RESET)
+ <LI><a href="#[98]">__main</a> from __main.o(!!!main) referenced from startup_s32k142.o(.text)
+ <LI><a href="#[b]">init_data_bss</a> from startup.o(i.init_data_bss) referenced from startup_s32k142.o(.text)
+ <LI><a href="#[d]">isr</a> from m2m_hif.o(i.isr) referenced from m2m_hif.o(i.hif_init)
+ <LI><a href="#[e]">m2m_hif_cb</a> from m2m_hif.o(i.m2m_hif_cb) referenced from m2m_hif.o(i.hif_init)
+ <LI><a href="#[f]">m2m_wifi_cb</a> from m2m_wifi.o(i.m2m_wifi_cb) referenced from m2m_wifi.o(i.m2m_wifi_init_start)
+ <LI><a href="#[11]">out_char</a> from printf.o(i.out_char) referenced from printf.o(i.nxpPrintf)
+ <LI><a href="#[10]">wifi_cb</a> from main.o(i.wifi_cb) referenced from main.o(i.main)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[98]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[99]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[9b]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[133]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[134]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[9c]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[135]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[a2]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[9d]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000001))
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+
+<P><STRONG><a name="[9f]"></a>__rt_lib_init_heap_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit5.o(.ARM.Collect$$libinit$$00000008))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_heap_2 &rArr; _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[136]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+<P><STRONG><a name="[137]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[138]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[139]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[13a]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[13b]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+<P><STRONG><a name="[13c]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[13d]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[13e]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+<P><STRONG><a name="[13f]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[140]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[141]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[142]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[143]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[144]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[145]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+<P><STRONG><a name="[146]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+<P><STRONG><a name="[147]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[148]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+<P><STRONG><a name="[149]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[a7]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[14a]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+<P><STRONG><a name="[14b]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+
+<P><STRONG><a name="[14c]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[14d]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+
+<P><STRONG><a name="[14e]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+
+<P><STRONG><a name="[14f]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+<P><STRONG><a name="[150]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+
+<P><STRONG><a name="[9a]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[151]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[152]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry7.o(.ARM.Collect$$rtentry$$00000007))
+
+<P><STRONG><a name="[a1]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[153]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[a3]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 872 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; m2m_wifi_enable_ap &rArr; m2m_wifi_enable_ap_ext &rArr; hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[154]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[b6]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[a6]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[155]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[a8]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[12]"></a>Reset_Handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[156]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[13]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>ADC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DefaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>ADC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[6b]"></a>CAN0_Error_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[6a]"></a>CAN0_ORed_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[6c]"></a>CAN0_Wake_Up_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[72]"></a>CAN1_Error_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[74]"></a>CAN1_ORed_0_15_MB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[71]"></a>CAN1_ORed_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>CMP0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>DMA0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>DMA10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>DMA11_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>DMA12_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>DMA13_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>DMA14_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>DMA15_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>DMA1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>DMA2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>DMA3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>DMA4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>DMA5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>DMA6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>DMA7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>DMA8_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>DMA9_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>DMA_Error_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[97]"></a>DefaultISR</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>ERM_double_fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>ERM_single_fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[61]"></a>FLEXIO_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>FTFC_Fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>FTFC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7f]"></a>FTM0_Ch0_Ch1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[80]"></a>FTM0_Ch2_Ch3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[81]"></a>FTM0_Ch4_Ch5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[82]"></a>FTM0_Ch6_Ch7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[83]"></a>FTM0_Fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[84]"></a>FTM0_Ovf_Reload_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[85]"></a>FTM1_Ch0_Ch1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[86]"></a>FTM1_Ch2_Ch3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[87]"></a>FTM1_Ch4_Ch5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[88]"></a>FTM1_Ch6_Ch7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[89]"></a>FTM1_Fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8a]"></a>FTM1_Ovf_Reload_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8b]"></a>FTM2_Ch0_Ch1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8c]"></a>FTM2_Ch2_Ch3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8d]"></a>FTM2_Ch4_Ch5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8e]"></a>FTM2_Ch6_Ch7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[8f]"></a>FTM2_Fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[90]"></a>FTM2_Ovf_Reload_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[91]"></a>FTM3_Ch0_Ch1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[92]"></a>FTM3_Ch2_Ch3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[93]"></a>FTM3_Ch4_Ch5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[94]"></a>FTM3_Ch6_Ch7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[95]"></a>FTM3_Fault_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[96]"></a>FTM3_Ovf_Reload_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>LPI2C0_Master_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>LPI2C0_Slave_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>LPIT0_Ch1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>LPIT0_Ch2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>LPIT0_Ch3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>LPSPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>LVD_LVW_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>MCM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[50]"></a>PDB0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[60]"></a>PDB1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[57]"></a>PORTA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[59]"></a>PORTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5a]"></a>PORTD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5b]"></a>PORTE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>RCM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>RTC_Seconds_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>Read_Collision_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[70]"></a>Reserved100_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[73]"></a>Reserved103_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[75]"></a>Reserved105_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[76]"></a>Reserved106_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[77]"></a>Reserved107_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[78]"></a>Reserved108_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[79]"></a>Reserved109_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7a]"></a>Reserved110_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7b]"></a>Reserved111_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7c]"></a>Reserved112_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7d]"></a>Reserved113_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[7e]"></a>Reserved114_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>Reserved44_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>Reserved45_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>Reserved46_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>Reserved48_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>Reserved50_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>Reserved51_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>Reserved52_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[41]"></a>Reserved53_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>Reserved54_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[46]"></a>Reserved58_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>Reserved59_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[51]"></a>Reserved69_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[52]"></a>Reserved70_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[53]"></a>Reserved71_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[54]"></a>Reserved72_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5d]"></a>Reserved81_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5e]"></a>Reserved82_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5f]"></a>Reserved83_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[62]"></a>Reserved86_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[63]"></a>Reserved87_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[64]"></a>Reserved88_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[65]"></a>Reserved89_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[66]"></a>Reserved90_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[67]"></a>Reserved91_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[68]"></a>Reserved92_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[69]"></a>Reserved93_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[6f]"></a>Reserved99_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[55]"></a>SCG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[5c]"></a>SWI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>WDOG_EWM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_s32k142.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[aa]"></a>malloc</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, h1_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initQueue
+</UL>
+
+<P><STRONG><a name="[ad]"></a>free</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, h1_free.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+</UL>
+
+<P><STRONG><a name="[fb]"></a>strcpy</STRONG> (Thumb, 72 bytes, Stack size 12 bytes, strcpy.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[125]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+</UL>
+
+<P><STRONG><a name="[c3]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiRecv
+</UL>
+
+<P><STRONG><a name="[ae]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+
+<P><STRONG><a name="[157]"></a>_memcpy_lastbytes</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_v6.o(.text), UNUSED)
+
+<P><STRONG><a name="[af]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+</UL>
+
+<P><STRONG><a name="[158]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[159]"></a>__rt_memcpy_w</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[15a]"></a>_memcpy_lastbytes_aligned</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[c2]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiSend
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiRecv
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[15b]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[15c]"></a>__rt_memclr_w</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[15d]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[ab]"></a>__rt_heap_descriptor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[15e]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[15f]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[8]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+<P><STRONG><a name="[3]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+<P><STRONG><a name="[ac]"></a>__Heap_Full</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, init_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+</UL>
+
+<P><STRONG><a name="[b1]"></a>__Heap_Broken</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[a0]"></a>_init_alloc</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, init_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_heap_2
+</UL>
+
+<P><STRONG><a name="[b3]"></a>__Heap_Initialize</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, h1_init.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[2]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
+
+<P><STRONG><a name="[b0]"></a>__Heap_ProvideMemory</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, h1_extend.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
+</UL>
+
+<P><STRONG><a name="[b2]"></a>__rt_SIGRTMEM</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Broken
+</UL>
+
+<P><STRONG><a name="[160]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[161]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[162]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[a5]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[b5]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[b4]"></a>__rt_SIGRTMEM_inner</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[a9]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[b7]"></a>__default_signal_display</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, defsig_general.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __default_signal_display &rArr; _ttywrch
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+</UL>
+
+<P><STRONG><a name="[b8]"></a>_ttywrch</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, sys_wrch.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _ttywrch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+
+<P><STRONG><a name="[6d]"></a>CAN0_ORed_0_15_MB_IRQHandler</STRONG> (Thumb, 16 bytes, Stack size 24 bytes, canbus.o(i.CAN0_ORed_0_15_MB_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = CAN0_ORed_0_15_MB_IRQHandler &rArr; Canbus0Recv &rArr; enQueueCan &rArr; deQueueCan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Canbus0Recv
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[6e]"></a>CAN0_ORed_16_31_MB_IRQHandler</STRONG> (Thumb, 16 bytes, Stack size 24 bytes, canbus.o(i.CAN0_ORed_16_31_MB_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = CAN0_ORed_16_31_MB_IRQHandler &rArr; Canbus0Recv &rArr; enQueueCan &rArr; deQueueCan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Canbus0Recv
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[b9]"></a>Canbus0Recv</STRONG> (Thumb, 348 bytes, Stack size 32 bytes, canbus.o(i.Canbus0Recv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = Canbus0Recv &rArr; enQueueCan &rArr; deQueueCan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueueCan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN0_ORed_16_31_MB_IRQHandler
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN0_ORed_0_15_MB_IRQHandler
+</UL>
+
+<P><STRONG><a name="[e6]"></a>GpioInit</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, gpio.o(i.GpioInit))
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_chip_pins
+</UL>
+
+<P><STRONG><a name="[e7]"></a>GpioSetDirection</STRONG> (Thumb, 284 bytes, Stack size 12 bytes, gpio.o(i.GpioSetDirection))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GpioSetDirection
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_chip_pins
+</UL>
+
+<P><STRONG><a name="[e8]"></a>GpioSetVal</STRONG> (Thumb, 234 bytes, Stack size 8 bytes, gpio.o(i.GpioSetVal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GpioSetVal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_reset
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_chip_pins
+</UL>
+
+<P><STRONG><a name="[4c]"></a>LPIT0_Ch0_IRQHandler</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, timer.o(i.LPIT0_Ch0_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[fc]"></a>LPIT0_init</STRONG> (Thumb, 74 bytes, Stack size 0 bytes, timer.o(i.LPIT0_init))
+<BR><BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_init
+</UL>
+
+<P><STRONG><a name="[36]"></a>LPSPI0_IRQHandler</STRONG> (Thumb, 248 bytes, Stack size 40 bytes, spi.o(i.LPSPI0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = LPSPI0_IRQHandler &rArr; enQueue &rArr; deQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getQueueLen
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueue
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueue
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[56]"></a>LPTMR0_IRQHandler</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, timer.o(i.LPTMR0_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>LPUART0_RxTx_IRQHandler</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, uart.o(i.LPUART0_RxTx_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LPUART0_RxTx_IRQHandler &rArr; enQueue &rArr; deQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getQueueLen
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueue
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueue
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>LPUART1_RxTx_IRQHandler</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, uart.o(i.LPUART1_RxTx_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LPUART1_RxTx_IRQHandler &rArr; enQueue &rArr; deQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getQueueLen
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueue
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueue
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[f8]"></a>NormalRUNmode_80MHz</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, clocks_and_modes.o(i.NormalRUNmode_80MHz))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[58]"></a>PORTB_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, nm_bsp.o(i.PORTB_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PORTB_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_EintHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(RESET)
+</UL>
+<P><STRONG><a name="[f6]"></a>SOSC_init_8MHz</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, clocks_and_modes.o(i.SOSC_init_8MHz))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f7]"></a>SPLL_init_160MHz</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, clocks_and_modes.o(i.SPLL_init_160MHz))
+<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bf]"></a>SpiInitMaster</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, spi.o(i.SpiInitMaster))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SpiInitMaster &rArr; initQueue &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initQueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c1]"></a>SpiRecv</STRONG> (Thumb, 184 bytes, Stack size 144 bytes, spi.o(i.SpiRecv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = SpiRecv &rArr; __aeabi_memclr4
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+
+<P><STRONG><a name="[c4]"></a>SpiSend</STRONG> (Thumb, 250 bytes, Stack size 144 bytes, spi.o(i.SpiSend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = SpiSend &rArr; __aeabi_memclr4
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+
+<P><STRONG><a name="[a]"></a>SystemInit</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, system_s32k142.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(.text)
+</UL>
+<P><STRONG><a name="[c5]"></a>chip_apply_conf</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, nmasic.o(i.chip_apply_conf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = chip_apply_conf &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+</UL>
+
+<P><STRONG><a name="[c8]"></a>chip_deinit</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, nmasic.o(i.chip_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = chip_deinit &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_deinit
+</UL>
+
+<P><STRONG><a name="[ca]"></a>chip_sleep</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, nmasic.o(i.chip_sleep))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = chip_sleep &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_chip_sleep
+</UL>
+
+<P><STRONG><a name="[cb]"></a>chip_wake</STRONG> (Thumb, 210 bytes, Stack size 24 bytes, nmasic.o(i.chip_wake))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = chip_wake &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_chip_wake
+</UL>
+
+<P><STRONG><a name="[bc]"></a>deQueue</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, nxpqueue.o(i.deQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = deQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isEmpityQueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPSPI0_IRQHandler
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueue
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART1_RxTx_IRQHandler
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART0_RxTx_IRQHandler
+</UL>
+
+<P><STRONG><a name="[d1]"></a>deQueueCan</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, nxpqueue.o(i.deQueueCan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = deQueueCan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isEmpityQueueCan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueueCan
+</UL>
+
+<P><STRONG><a name="[bb]"></a>enQueue</STRONG> (Thumb, 58 bytes, Stack size 20 bytes, nxpqueue.o(i.enQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = enQueue &rArr; deQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isFullQueue
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPSPI0_IRQHandler
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART1_RxTx_IRQHandler
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART0_RxTx_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ba]"></a>enQueueCan</STRONG> (Thumb, 66 bytes, Stack size 36 bytes, nxpqueue.o(i.enQueueCan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = enQueueCan &rArr; deQueueCan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isFullQueueCan
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueueCan
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Canbus0Recv
+</UL>
+
+<P><STRONG><a name="[d5]"></a>enable_interrupts</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, nmasic.o(i.enable_interrupts))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = enable_interrupts &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+</UL>
+
+<P><STRONG><a name="[bd]"></a>getQueueLen</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, nxpqueue.o(i.getQueueLen))
+<BR><BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPSPI0_IRQHandler
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART1_RxTx_IRQHandler
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPUART0_RxTx_IRQHandler
+</UL>
+
+<P><STRONG><a name="[d6]"></a>hif_chip_sleep</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, m2m_hif.o(i.hif_chip_sleep))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = hif_chip_sleep &rArr; chip_sleep &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+</UL>
+
+<P><STRONG><a name="[e4]"></a>hif_chip_sleep_sc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, m2m_hif.o(i.hif_chip_sleep_sc))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+</UL>
+
+<P><STRONG><a name="[d7]"></a>hif_chip_wake</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, m2m_hif.o(i.hif_chip_wake))
+<BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = hif_chip_wake &rArr; chip_wake &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+</UL>
+
+<P><STRONG><a name="[d8]"></a>hif_handle_isr</STRONG> (Thumb, 142 bytes, Stack size 16 bytes, m2m_hif.o(i.hif_handle_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 512<LI>Call Chain = hif_handle_isr &rArr; hif_isr &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_interrupt_ctrl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_handle_events
+</UL>
+
+<P><STRONG><a name="[db]"></a>hif_init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, m2m_hif.o(i.hif_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = hif_init &rArr; hif_register_cb &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_register_cb
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_memset
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_register_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+</UL>
+
+<P><STRONG><a name="[e1]"></a>hif_receive</STRONG> (Thumb, 224 bytes, Stack size 24 bytes, m2m_hif.o(i.hif_receive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 488<LI>Call Chain = hif_receive &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_block
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_set_rx_done
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_cb
+</UL>
+
+<P><STRONG><a name="[de]"></a>hif_register_cb</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, m2m_hif.o(i.hif_register_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = hif_register_cb &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_init
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+</UL>
+
+<P><STRONG><a name="[e2]"></a>hif_send</STRONG> (Thumb, 558 bytes, Stack size 56 bytes, m2m_hif.o(i.hif_send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 512<LI>Call Chain = hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_block
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_chip_wake
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_chip_sleep_sc
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_chip_sleep
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap_ext
+</UL>
+
+<P><STRONG><a name="[c0]"></a>initQueue</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, nxpqueue.o(i.initQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = initQueue &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiInitMaster
+</UL>
+
+<P><STRONG><a name="[b]"></a>init_data_bss</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, startup.o(i.init_data_bss))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = init_data_bss
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_s32k142.o(.text)
+</UL>
+<P><STRONG><a name="[d0]"></a>isEmpityQueue</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, nxpqueue.o(i.isEmpityQueue))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueue
+</UL>
+
+<P><STRONG><a name="[d2]"></a>isEmpityQueueCan</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, nxpqueue.o(i.isEmpityQueueCan))
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;deQueueCan
+</UL>
+
+<P><STRONG><a name="[d3]"></a>isFullQueue</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, nxpqueue.o(i.isFullQueue))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueue
+</UL>
+
+<P><STRONG><a name="[d4]"></a>isFullQueueCan</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, nxpqueue.o(i.isFullQueueCan))
+<BR><BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enQueueCan
+</UL>
+
+<P><STRONG><a name="[ff]"></a>m2mStub_EintDisable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, nm_bsp.o(i.m2mStub_EintDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_interrupt_ctrl
+</UL>
+
+<P><STRONG><a name="[fe]"></a>m2mStub_EintEnable</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, nm_bsp.o(i.m2mStub_EintEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_register_isr
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_interrupt_ctrl
+</UL>
+
+<P><STRONG><a name="[be]"></a>m2m_EintHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, m2m_hif.o(i.m2m_EintHandler))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORTB_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ec]"></a>m2m_memcpy</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, nm_common.o(i.m2m_memcpy))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap
+</UL>
+
+<P><STRONG><a name="[dc]"></a>m2m_memset</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, nm_common.o(i.m2m_memset))
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_init
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_get_firmware_full_info
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_cb
+</UL>
+
+<P><STRONG><a name="[ea]"></a>m2m_strlen</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, nm_common.o(i.m2m_strlen))
+<BR><BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_validate_ap_parameters
+</UL>
+
+<P><STRONG><a name="[eb]"></a>m2m_wifi_enable_ap</STRONG> (Thumb, 56 bytes, Stack size 160 bytes, m2m_wifi.o(i.m2m_wifi_enable_ap))
+<BR><BR>[Stack]<UL><LI>Max Depth = 696<LI>Call Chain = m2m_wifi_enable_ap &rArr; m2m_wifi_enable_ap_ext &rArr; hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_memcpy
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap_ext
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ed]"></a>m2m_wifi_enable_ap_ext</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, m2m_wifi.o(i.m2m_wifi_enable_ap_ext))
+<BR><BR>[Stack]<UL><LI>Max Depth = 536<LI>Call Chain = m2m_wifi_enable_ap_ext &rArr; hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_validate_ap_parameters
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap
+</UL>
+
+<P><STRONG><a name="[ee]"></a>m2m_wifi_handle_events</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, m2m_wifi.o(i.m2m_wifi_handle_events))
+<BR><BR>[Stack]<UL><LI>Max Depth = 520<LI>Call Chain = m2m_wifi_handle_events &rArr; hif_handle_isr &rArr; hif_isr &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_handle_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ef]"></a>m2m_wifi_init</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, m2m_wifi.o(i.m2m_wifi_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 584<LI>Call Chain = m2m_wifi_init &rArr; m2m_wifi_init_start &rArr; nm_get_firmware_full_info &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_hold
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f0]"></a>m2m_wifi_init_hold</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, m2m_wifi.o(i.m2m_wifi_init_hold))
+<BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = m2m_wifi_init_hold &rArr; nm_drv_init_hold &rArr; nmi_get_chipid &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_hold
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init
+</UL>
+
+<P><STRONG><a name="[f1]"></a>m2m_wifi_init_start</STRONG> (Thumb, 290 bytes, Stack size 64 bytes, m2m_wifi.o(i.m2m_wifi_init_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 568<LI>Call Chain = m2m_wifi_init_start &rArr; nm_get_firmware_full_info &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_register_cb
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_init
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_get_firmware_full_info
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_deinit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init
+</UL>
+
+<P><STRONG><a name="[a4]"></a>main</STRONG> (Thumb, 168 bytes, Stack size 176 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 872<LI>Call Chain = main &rArr; m2m_wifi_enable_ap &rArr; m2m_wifi_enable_ap_ext &rArr; hif_send &rArr; nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_init
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_handle_events
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiInitMaster
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPLL_init_160MHz
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SOSC_init_8MHz
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NormalRUNmode_80MHz
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[f9]"></a>nm_bsp_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, nm_bsp.o(i.nm_bsp_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = nm_bsp_init &rArr; init_chip_pins &rArr; GpioSetDirection
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_reset
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_chip_pins
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPIT0_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d9]"></a>nm_bsp_interrupt_ctrl</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, nm_bsp.o(i.nm_bsp_interrupt_ctrl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = nm_bsp_interrupt_ctrl
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2mStub_EintEnable
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2mStub_EintDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_handle_isr
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_set_rx_done
+</UL>
+
+<P><STRONG><a name="[dd]"></a>nm_bsp_register_isr</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, nm_bsp.o(i.nm_bsp_register_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = nm_bsp_register_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2mStub_EintEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_init
+</UL>
+
+<P><STRONG><a name="[fd]"></a>nm_bsp_reset</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, nm_bsp.o(i.nm_bsp_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nm_bsp_reset &rArr; GpioSetVal
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetVal
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_init
+</UL>
+
+<P><STRONG><a name="[cc]"></a>nm_bsp_sleep</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, nm_bsp.o(i.nm_bsp_sleep))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_reset
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_firmware_start
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+</UL>
+
+<P><STRONG><a name="[101]"></a>nm_bus_deinit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, nm_bus_wrapper.o(i.nm_bus_deinit))
+<BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_iface_deinit
+</UL>
+
+<P><STRONG><a name="[100]"></a>nm_bus_iface_deinit</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, nmbus.o(i.nm_bus_iface_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = nm_bus_iface_deinit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_deinit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_deinit
+</UL>
+
+<P><STRONG><a name="[102]"></a>nm_bus_iface_init</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, nmbus.o(i.nm_bus_iface_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nm_bus_iface_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_hold
+</UL>
+
+<P><STRONG><a name="[103]"></a>nm_bus_init</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, nm_bus_wrapper.o(i.nm_bus_init))
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_iface_init
+</UL>
+
+<P><STRONG><a name="[104]"></a>nm_bus_ioctl</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, nm_bus_wrapper.o(i.nm_bus_ioctl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_write
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_read
+</UL>
+
+<P><STRONG><a name="[cd]"></a>nm_bus_reset</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, nmbus.o(i.nm_bus_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = nm_bus_reset &rArr; nm_spi_reset &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_reset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+</UL>
+
+<P><STRONG><a name="[f5]"></a>nm_drv_deinit</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, nmdrv.o(i.nm_drv_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = nm_drv_deinit &rArr; chip_deinit &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_deinit
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_deinit
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_iface_deinit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+</UL>
+
+<P><STRONG><a name="[f2]"></a>nm_drv_init_hold</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, nmdrv.o(i.nm_drv_init_hold))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = nm_drv_init_hold &rArr; nmi_get_chipid &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_get_chipid
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_init
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_iface_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_hold
+</UL>
+
+<P><STRONG><a name="[f3]"></a>nm_drv_init_start</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, nmdrv.o(i.nm_drv_init_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 496<LI>Call Chain = nm_drv_init_start &rArr; wait_for_bootrom &rArr; chip_apply_conf &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_firmware_start
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_interrupts
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_deinit
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_iface_deinit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+</UL>
+
+<P><STRONG><a name="[f4]"></a>nm_get_firmware_full_info</STRONG> (Thumb, 208 bytes, Stack size 40 bytes, nmdrv.o(i.nm_get_firmware_full_info))
+<BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = nm_get_firmware_full_info &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_block
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+</UL>
+
+<P><STRONG><a name="[df]"></a>nm_read_block</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, nmbus.o(i.nm_read_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 464<LI>Call Chain = nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_nm_read_block
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_receive
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_get_firmware_full_info
+</UL>
+
+<P><STRONG><a name="[10d]"></a>nm_read_reg</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, nmbus.o(i.nm_read_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = nm_read_reg &rArr; nm_spi_read_reg &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_firmware_start
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+</UL>
+
+<P><STRONG><a name="[c7]"></a>nm_read_reg_with_ret</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, nmbus.o(i.nm_read_reg_with_ret))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_sleep
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_set_rx_done
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_get_chipid
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_deinit
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_apply_conf
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_get_firmware_full_info
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_interrupts
+</UL>
+
+<P><STRONG><a name="[107]"></a>nm_spi_deinit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, nmspi.o(i.nm_spi_deinit))
+<BR><BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_deinit
+</UL>
+
+<P><STRONG><a name="[109]"></a>nm_spi_init</STRONG> (Thumb, 238 bytes, Stack size 16 bytes, nmspi.o(i.nm_spi_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = nm_spi_init &rArr; spi_init_pkt_sz &rArr; nm_spi_read_reg &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init_pkt_sz
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_hold
+</UL>
+
+<P><STRONG><a name="[117]"></a>nm_spi_read_block</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, nmspi.o(i.nm_spi_read_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_nm_read_block
+</UL>
+
+<P><STRONG><a name="[10e]"></a>nm_spi_read_reg</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, nmspi.o(i.nm_spi_read_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = nm_spi_read_reg &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init_pkt_sz
+</UL>
+
+<P><STRONG><a name="[10f]"></a>nm_spi_read_reg_with_ret</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, nmspi.o(i.nm_spi_read_reg_with_ret))
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+
+<P><STRONG><a name="[106]"></a>nm_spi_reset</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, nmspi.o(i.nm_spi_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = nm_spi_reset &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_reset
+</UL>
+
+<P><STRONG><a name="[11b]"></a>nm_spi_write_block</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, nmspi.o(i.nm_spi_write_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_nm_write_block
+</UL>
+
+<P><STRONG><a name="[11c]"></a>nm_spi_write_reg</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, nmspi.o(i.nm_spi_write_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = nm_spi_write_reg &rArr; spi_write_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_init_pkt_sz
+</UL>
+
+<P><STRONG><a name="[e3]"></a>nm_write_block</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, nmbus.o(i.nm_write_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 456<LI>Call Chain = nm_write_block &rArr; p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;p_nm_write_block
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+</UL>
+
+<P><STRONG><a name="[c6]"></a>nm_write_reg</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, nmbus.o(i.nm_write_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = nm_write_reg &rArr; nm_spi_write_reg &rArr; spi_write_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_sleep
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_set_rx_done
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_firmware_start
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_deinit
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_apply_conf
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enable_interrupts
+</UL>
+
+<P><STRONG><a name="[108]"></a>nmi_get_chipid</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, nmasic.o(i.nmi_get_chipid))
+<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = nmi_get_chipid &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_hold
+</UL>
+
+<P><STRONG><a name="[c9]"></a>nxpPrintf</STRONG> (Thumb, 42 bytes, Stack size 40 bytes, printf.o(i.nxpPrintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_wake
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_send
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_register_cb
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_receive
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_handle_isr
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_ioctl
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_rw
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_for_bootrom
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_deinit
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_hold
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_deinit
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_init_start
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_cb
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_validate_ap_parameters
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_write
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_rsp
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_read
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_init
+</UL>
+
+<P><STRONG><a name="[11]"></a>out_char</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, printf.o(i.out_char))
+<BR>[Address Reference Count : 1]<UL><LI> printf.o(i.nxpPrintf)
+</UL>
+<P><STRONG><a name="[120]"></a>printk</STRONG> (Thumb, 1156 bytes, Stack size 112 bytes, printf.o(i.printk))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_putc
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_pad_zero
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_pad_space
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_mknumstr
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+</UL>
+
+<P><STRONG><a name="[fa]"></a>uartInit</STRONG> (Thumb, 454 bytes, Stack size 104 bytes, uart.o(i.uartInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = uartInit &rArr; initQueue &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initQueue
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[10a]"></a>wait_for_bootrom</STRONG> (Thumb, 262 bytes, Stack size 32 bytes, nmasic.o(i.wait_for_bootrom))
+<BR><BR>[Stack]<UL><LI>Max Depth = 480<LI>Call Chain = wait_for_bootrom &rArr; chip_apply_conf &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_get_chipid
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chip_apply_conf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+</UL>
+
+<P><STRONG><a name="[10b]"></a>wait_for_firmware_start</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, nmasic.o(i.wait_for_firmware_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = wait_for_firmware_start &rArr; nm_write_reg &rArr; nm_spi_write_reg &rArr; spi_write_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_drv_init_start
+</UL>
+
+<P><STRONG><a name="[129]"></a>__aeabi_dadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, daddsub_clz.o(x$fpl$dadd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+</UL>
+
+<P><STRONG><a name="[12b]"></a>_dadd</STRONG> (Thumb, 332 bytes, Stack size 16 bytes, daddsub_clz.o(x$fpl$dadd), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub1
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[128]"></a>__aeabi_ddiv</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_ddiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+</UL>
+
+<P><STRONG><a name="[12f]"></a>_ddiv</STRONG> (Thumb, 552 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[12a]"></a>__aeabi_d2iz</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dfix.o(x$fpl$dfix))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2iz
+</UL>
+<BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+</UL>
+
+<P><STRONG><a name="[130]"></a>_dfix</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, dfix.o(x$fpl$dfix), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[126]"></a>__aeabi_i2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+</UL>
+
+<P><STRONG><a name="[163]"></a>_dflt</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt), UNUSED)
+
+<P><STRONG><a name="[127]"></a>__aeabi_ui2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu))
+<BR><BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartInit
+</UL>
+
+<P><STRONG><a name="[164]"></a>_dfltu</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dfltu), UNUSED)
+
+<P><STRONG><a name="[12e]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfix
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+</UL>
+
+<P><STRONG><a name="[12d]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+</UL>
+
+<P><STRONG><a name="[165]"></a>__aeabi_dsub</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+
+<P><STRONG><a name="[131]"></a>_dsub</STRONG> (Thumb, 464 bytes, Stack size 32 bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd1
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[9e]"></a>_fp_init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_fp_1
+</UL>
+
+<P><STRONG><a name="[166]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[167]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[10]"></a>wifi_cb</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, main.o(i.wifi_cb))
+<BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
+</UL>
+<P><STRONG><a name="[122]"></a>printk_mknumstr</STRONG> (Thumb, 140 bytes, Stack size 36 bytes, printf.o(i.printk_mknumstr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = printk_mknumstr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+</UL>
+
+<P><STRONG><a name="[124]"></a>printk_pad_space</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, printf.o(i.printk_pad_space))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = printk_pad_space &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+</UL>
+
+<P><STRONG><a name="[123]"></a>printk_pad_zero</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, printf.o(i.printk_pad_zero))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+</UL>
+
+<P><STRONG><a name="[121]"></a>printk_putc</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, printf.o(i.printk_putc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = printk_putc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_pad_zero
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printk_pad_space
+</UL>
+
+<P><STRONG><a name="[e5]"></a>init_chip_pins</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, nm_bsp.o(i.init_chip_pins))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = init_chip_pins &rArr; GpioSetDirection
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetVal
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetDirection
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_init
+</UL>
+
+<P><STRONG><a name="[105]"></a>spi_rw</STRONG> (Thumb, 228 bytes, Stack size 64 bytes, nm_bus_wrapper.o(i.spi_rw))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiSend
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiRecv
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetVal
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_ioctl
+</UL>
+
+<P><STRONG><a name="[da]"></a>hif_isr</STRONG> (Thumb, 846 bytes, Stack size 32 bytes, m2m_hif.o(i.hif_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 496<LI>Call Chain = hif_isr &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_block
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_set_rx_done
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_handle_isr
+</UL>
+
+<P><STRONG><a name="[e0]"></a>hif_set_rx_done</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, m2m_hif.o(i.hif_set_rx_done))
+<BR><BR>[Stack]<UL><LI>Max Depth = 440<LI>Call Chain = hif_set_rx_done &rArr; nm_read_reg_with_ret &rArr; nm_spi_read_reg_with_ret &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_reg
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_reg_with_ret
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_interrupt_ctrl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_receive
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_isr
+</UL>
+
+<P><STRONG><a name="[d]"></a>isr</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, m2m_hif.o(i.isr))
+<BR>[Address Reference Count : 1]<UL><LI> m2m_hif.o(i.hif_init)
+</UL>
+<P><STRONG><a name="[e]"></a>m2m_hif_cb</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, m2m_hif.o(i.m2m_hif_cb))
+<BR>[Address Reference Count : 1]<UL><LI> m2m_hif.o(i.hif_init)
+</UL>
+<P><STRONG><a name="[e9]"></a>m2m_validate_ap_parameters</STRONG> (Thumb, 474 bytes, Stack size 16 bytes, m2m_wifi.o(i.m2m_validate_ap_parameters))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = m2m_validate_ap_parameters &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_wifi_enable_ap_ext
+</UL>
+
+<P><STRONG><a name="[f]"></a>m2m_wifi_cb</STRONG> (Thumb, 682 bytes, Stack size 128 bytes, m2m_wifi.o(i.m2m_wifi_cb))
+<BR><BR>[Stack]<UL><LI>Max Depth = 616<LI>Call Chain = m2m_wifi_cb &rArr; hif_receive &rArr; nm_read_block &rArr; p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hif_receive
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;m2m_memset
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> m2m_wifi.o(i.m2m_wifi_init_start)
+</UL>
+<P><STRONG><a name="[10c]"></a>p_nm_read_block</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, nmbus.o(i.p_nm_read_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 432<LI>Call Chain = p_nm_read_block &rArr; nm_spi_read_block &rArr; nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_block
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_read_block
+</UL>
+
+<P><STRONG><a name="[11d]"></a>p_nm_write_block</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, nmbus.o(i.p_nm_write_block))
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = p_nm_write_block &rArr; nm_spi_write_block &rArr; nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write_block
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_write_block
+</UL>
+
+<P><STRONG><a name="[ce]"></a>crc7</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, nmspi.o(i.crc7))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = crc7
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc7_byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+
+<P><STRONG><a name="[cf]"></a>crc7_byte</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nmspi.o(i.crc7_byte))
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc7
+</UL>
+
+<P><STRONG><a name="[113]"></a>nm_spi_read</STRONG> (Thumb, 300 bytes, Stack size 40 bytes, nmspi.o(i.nm_spi_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = nm_spi_read &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_read
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_block
+</UL>
+
+<P><STRONG><a name="[118]"></a>nm_spi_write</STRONG> (Thumb, 314 bytes, Stack size 32 bytes, nmspi.o(i.nm_spi_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = nm_spi_write &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_write
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_rsp
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write_block
+</UL>
+
+<P><STRONG><a name="[11e]"></a>nmi_spi_read</STRONG> (Thumb, 26 bytes, Stack size 24 bytes, nmspi.o(i.nmi_spi_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = nmi_spi_read &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_ioctl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_rsp
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_read
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+</UL>
+
+<P><STRONG><a name="[11f]"></a>nmi_spi_write</STRONG> (Thumb, 26 bytes, Stack size 24 bytes, nmspi.o(i.nmi_spi_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bus_ioctl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_write
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+
+<P><STRONG><a name="[114]"></a>spi_cmd</STRONG> (Thumb, 450 bytes, Stack size 48 bytes, nmspi.o(i.spi_cmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_write
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc7
+</UL>
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_reset
+</UL>
+
+<P><STRONG><a name="[115]"></a>spi_cmd_rsp</STRONG> (Thumb, 164 bytes, Stack size 24 bytes, nmspi.o(i.spi_cmd_rsp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = spi_cmd_rsp &rArr; nmi_spi_read &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_write_reg
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_reset
+</UL>
+
+<P><STRONG><a name="[116]"></a>spi_data_read</STRONG> (Thumb, 290 bytes, Stack size 40 bytes, nmspi.o(i.spi_data_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = spi_data_read &rArr; nmi_spi_read &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_read_reg
+<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read
+</UL>
+
+<P><STRONG><a name="[11a]"></a>spi_data_rsp</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, nmspi.o(i.spi_data_rsp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = spi_data_rsp &rArr; nmi_spi_read &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+</UL>
+
+<P><STRONG><a name="[119]"></a>spi_data_write</STRONG> (Thumb, 258 bytes, Stack size 40 bytes, nmspi.o(i.spi_data_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = spi_data_write &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nmi_spi_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write
+</UL>
+
+<P><STRONG><a name="[112]"></a>spi_init_pkt_sz</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, nmspi.o(i.spi_init_pkt_sz))
+<BR><BR>[Stack]<UL><LI>Max Depth = 416<LI>Call Chain = spi_init_pkt_sz &rArr; nm_spi_read_reg &rArr; spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write_reg
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_init
+</UL>
+
+<P><STRONG><a name="[110]"></a>spi_read_reg</STRONG> (Thumb, 304 bytes, Stack size 40 bytes, nmspi.o(i.spi_read_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = spi_read_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_data_read
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_init
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_reg_with_ret
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_read_reg
+</UL>
+
+<P><STRONG><a name="[111]"></a>spi_write_reg</STRONG> (Thumb, 230 bytes, Stack size 32 bytes, nmspi.o(i.spi_write_reg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 384<LI>Call Chain = spi_write_reg &rArr; spi_cmd &rArr; nmi_spi_write &rArr; nm_bus_ioctl &rArr; spi_rw &rArr; nxpPrintf &rArr; printk &rArr; printk_pad_zero &rArr; printk_putc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nxpPrintf
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_bsp_sleep
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd_rsp
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_init
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nm_spi_write_reg
+</UL>
+
+<P><STRONG><a name="[132]"></a>_dadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, daddsub_clz.o(x$fpl$dadd), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
+</UL>
+
+<P><STRONG><a name="[12c]"></a>_dsub1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

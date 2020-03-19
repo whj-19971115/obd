@@ -1,0 +1,13 @@
+.\objects\winc_init.o: wifi\winc_init.c
+.\objects\winc_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\winc_init.o: wifi\winc_init.h
+.\objects\winc_init.o: wifi\driver/include/m2m_wifi.h
+.\objects\winc_init.o: .\wifi\common/include/nm_common.h
+.\objects\winc_init.o: .\wifi\bsp/include/nm_bsp.h
+.\objects\winc_init.o: .\wifi\common/include/nm_debug.h
+.\objects\winc_init.o: .\wifi\bsp/include/nm_bsp_internal.h
+.\objects\winc_init.o: .\wifi\driver/include/m2m_types.h
+.\objects\winc_init.o: .\wifi\driver/source/nmdrv.h
+.\objects\winc_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\winc_init.o: wifi\driver/source/nmasic.h
+.\objects\winc_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
