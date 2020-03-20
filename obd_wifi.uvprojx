@@ -453,14 +453,14 @@
               <FilePath>.\wifi\bsp\source\nm_bsp.c</FilePath>
             </File>
             <File>
-              <FileName>nm_bus_wrapper.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\wifi\bus_wrapper\source\nm_bus_wrapper.c</FilePath>
-            </File>
-            <File>
               <FileName>nm_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\wifi\common\source\nm_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>nm_bus_wrapper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\wifi\bus_wrapper\source\nm_bus_wrapper.c</FilePath>
             </File>
             <File>
               <FileName>m2m_ate_mode.c</FileName>

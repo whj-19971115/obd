@@ -207,8 +207,8 @@ return M2M_SUCCESS;
  uint8_t spi_rxbuf[1024];
 	uint8 u8Dummy    = 0;
 	uint8 u8SkipMosi = 0, u8SkipMiso = 0;
-	uint16_t txd_data = 0;
-	uint16_t rxd_data = 0;
+	uint8_t txd_data = 0;
+	uint8_t rxd_data = 0;
 	uint8_t uc_pcs = 0;
 	volatile uint32_t dat_idx = 0;
 
@@ -225,29 +225,49 @@ return M2M_SUCCESS;
 int dat_idxtx = 0;
 int dat_idxrx = 0;
 	GpioSetVal(PORT_B, 5, 0);
-	if (!u8SkipMiso) {
-		dat_idxrx = SpiRecv(pu8Miso,u16Sz,10);
-//		io_read(io, pu8Miso, u16Sz);
-	}
-	if (!u8SkipMosi) {
-	dat_idxtx = SpiSend(pu8Mosi,u16Sz,10);
-//		io_write(io, pu8Mosi, u16Sz);
-	}
-	if (g_winc_logstart) {
-		printf("spi tx package =%d\r\n",dat_idxtx);
-	
-		for (uint32_t i = 0; i < dat_idxtx; i++) {
-			printf("0x%02X ", pu8Mosi[i]);
-		}
-		printf("\r\n");
-	
-		printf("spi rx package =%d\r\n",dat_idxrx);
-	
-		for (uint32_t j = 0; j < dat_idxrx; j++) {
-			printf("0x%02X ", pu8Miso[j]);
-		}
-		printf("\r\n");
-	}	
+	int i = 0;
+ while (u16Sz) {
+  txd_data = *pu8Mosi;
+  dat_idxtx = SpiSend(&txd_data,1,10);
+  
+  /* Read SPI master data register. */
+  dat_idxrx = SpiRecv(&rxd_data,1,10);
+  spi_rxbuf[dat_idx] = rxd_data;
+
+  *pu8Miso = rxd_data;
+  
+  u16Sz--;
+  if (!u8SkipMiso)
+   pu8Miso++;
+  if (!u8SkipMosi)
+   pu8Mosi++;
+  
+  dat_idx++;
+  dat_idx &= 0x3FF;
+ }
+//	if (!u8SkipMiso) {
+//		dat_idxrx = SpiRecv(pu8Miso,u16Sz,10);
+////		io_read(io, pu8Miso, u16Sz);
+//	}
+//	if (!u8SkipMosi) {
+//	dat_idxtx = SpiSend(pu8Mosi,u16Sz,10);
+////		io_write(io, pu8Mosi, u16Sz);
+//	}
+//	if (g_winc_logstart) {
+//		printf("spi tx package =%d\r\n",dat_idx);
+//	
+//		for (uint32_t i = 0; i < dat_idx; i++) {
+//			printf("0x%02X ", spi_txbuf[i]);
+//		}
+//		printf("\r\n");
+//	
+//		printf("spi rx package =%d\r\n",dat_idx);
+//	
+//		for (uint32_t j = 0; j < dat_idx; j++) {
+//			printf("0x%02X ", spi_rxbuf[j]);
+//		}
+//		printf("\r\n");
+//	}
 	GpioSetVal(PORT_B, 5, 1);
 	
 //	if (g_winc_logstart) {

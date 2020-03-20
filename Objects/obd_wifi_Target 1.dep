@@ -1,5 +1,5 @@
 Dependencies for Project 'obd_wifi', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x5E6F1626)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x5E746B2A)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\include\S32K142.h)(0x5CF7824D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8F4DD4)
@@ -16,7 +16,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEB79DE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
-I (.\wifi\socket\include\socket.h)(0x5D6774BA)
+I (.\wifi\socket\include\socket.h)(0x5E733E38)
 I (.\wifi\common/include/nm_common.h)(0x5E6EF18D)
 I (.\wifi\bsp/include/nm_bsp.h)(0x5E71EAE1)
 I (.\wifi\bsp/include/conf_winc.h)(0x5E6EEC8C)
@@ -28,7 +28,7 @@ I (wifi/driver/include/m2m_wifi.h)(0x5E6EDBDB)
 I (.\wifi\driver/source/nmdrv.h)(0x5D6774BB)
 I (wifi/driver/source/nmasic.h)(0x5D6774B9)
 I (.\nxpLib\spi.h)(0x5E1AB738)
-I (main.h)(0x5E69F9D3)
+I (main.h)(0x5E745A7A)
 F (.\nxpLib\canbus.c)(0x5D4027DE)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\canbus.o --omf_browse .\objects\canbus.crf --depend .\objects\canbus.d)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\device_registers.h)(0x5A1EA756)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common\s32_core_cm4.h)(0x5A3B53E6)
@@ -112,7 +112,7 @@ I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platfor
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\devassert.h)(0x5A1EA756)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEB79DE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
-F (.\nxpLib\spi.c)(0x5E1D62B4)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+F (.\nxpLib\spi.c)(0x5E730B28)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\device_registers.h)(0x5A1EA756)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common\s32_core_cm4.h)(0x5A3B53E6)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\S32K142\include\S32K142.h)(0x5A3B53E6)
@@ -204,7 +204,15 @@ I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Inc
 I (.\RTE\Device\S32K142HAxxxLHx\system_S32K142.h)(0x5A1EA6C6)
 I (.\wifi\driver\source\nmspi.h)(0x5D6774BB)
 I (.\wifi\driver/source/m2m_hif.h)(0x5E72C8CB)
-F (.\wifi\bus_wrapper\source\nm_bus_wrapper.c)(0x5E71E915)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\nm_bus_wrapper.o --omf_browse .\objects\nm_bus_wrapper.crf --depend .\objects\nm_bus_wrapper.d)
+F (.\wifi\common\source\nm_common.c)(0x5D6774B8)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\nm_common.o --omf_browse .\objects\nm_common.crf --depend .\objects\nm_common.d)
+I (.\wifi\common/include/nm_common.h)(0x5E6EF18D)
+I (.\wifi\bsp/include/nm_bsp.h)(0x5E71EAE1)
+I (.\wifi\bsp/include/conf_winc.h)(0x5E6EEC8C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (.\nxpLib\printf.h)(0x5E1D7F62)
+I (.\wifi\common/include/nm_debug.h)(0x5D6774BB)
+I (.\wifi\bsp/include/nm_bsp_internal.h)(0x5D6774BD)
+F (.\wifi\bus_wrapper\source\nm_bus_wrapper.c)(0x5E731B27)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\nm_bus_wrapper.o --omf_browse .\objects\nm_bus_wrapper.crf --depend .\objects\nm_bus_wrapper.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (.\wifi\bsp/include/nm_bsp.h)(0x5E71EAE1)
 I (.\wifi\bsp/include/conf_winc.h)(0x5E6EEC8C)
@@ -221,14 +229,6 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEB79DE)
 I (.\nxpLib\usertype.h)(0x5D410321)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
-F (.\wifi\common\source\nm_common.c)(0x5D6774B8)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\nm_common.o --omf_browse .\objects\nm_common.crf --depend .\objects\nm_common.d)
-I (.\wifi\common/include/nm_common.h)(0x5E6EF18D)
-I (.\wifi\bsp/include/nm_bsp.h)(0x5E71EAE1)
-I (.\wifi\bsp/include/conf_winc.h)(0x5E6EEC8C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
-I (.\nxpLib\printf.h)(0x5E1D7F62)
-I (.\wifi\common/include/nm_debug.h)(0x5D6774BB)
-I (.\wifi\bsp/include/nm_bsp_internal.h)(0x5D6774BD)
 F (.\wifi\driver\source\m2m_ate_mode.c)(0x5D6774B7)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\m2m_ate_mode.o --omf_browse .\objects\m2m_ate_mode.crf --depend .\objects\m2m_ate_mode.d)
 F (.\wifi\driver\source\m2m_crypto.c)(0x5DFC2FFC)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\m2m_crypto.o --omf_browse .\objects\m2m_crypto.crf --depend .\objects\m2m_crypto.d)
 I (.\wifi\driver/include/m2m_crypto.h)(0x5D6774BD)
@@ -298,7 +298,7 @@ I (.\wifi\bsp/include/nm_bsp_internal.h)(0x5D6774BD)
 I (.\wifi\driver/include/m2m_types.h)(0x5E72D378)
 I (.\wifi\driver/source/nmdrv.h)(0x5D6774BB)
 I (.\wifi\driver/include/ecc_types.h)(0x5D6774BC)
-I (.\wifi\socket/include/socket.h)(0x5D6774BA)
+I (.\wifi\socket/include/socket.h)(0x5E733E38)
 I (.\wifi\driver/source/m2m_hif.h)(0x5E72C8CB)
 I (.\wifi\driver/source/nmasic.h)(0x5D6774B9)
 F (.\wifi\driver\source\m2m_wifi.c)(0x5E6EDBA9)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\m2m_wifi.o --omf_browse .\objects\m2m_wifi.crf --depend .\objects\m2m_wifi.d)
@@ -384,12 +384,12 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (.\nxpLib\printf.h)(0x5E1D7F62)
 I (.\wifi\common/include/nm_debug.h)(0x5D6774BB)
 I (.\wifi\bsp/include/nm_bsp_internal.h)(0x5D6774BD)
-F (.\wifi\socket\source\socket.c)(0x5D6774B7)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\socket.o --omf_browse .\objects\socket.crf --depend .\objects\socket.d)
+F (.\wifi\socket\source\socket.c)(0x5E742622)(--c99 --gnu -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I .\nxpLib -I .\include -I .\wifi\common\include -I .\wifi -I .\wifi\bus_wrapper\include -I .\wifi\bsp\include -I .\wifi\socket\include -I .\wifi\driver\include -I ..\obd_wifi -I .\wifi\driver\source-I.\RTE\Device\S32K142HAxxxLHx-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\S32_SDK_DFP\1.2.0\platform\devices\common-D__UVISION_VERSION="528" -D_RTE_ -DCPU_S32K142 -DUSE_STDPERIPH_DRIVER-o .\objects\socket.o --omf_browse .\objects\socket.crf --depend .\objects\socket.d)
 I (.\wifi\bsp/include/nm_bsp.h)(0x5E71EAE1)
 I (.\wifi\bsp/include/conf_winc.h)(0x5E6EEC8C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (.\nxpLib\printf.h)(0x5E1D7F62)
-I (.\wifi\socket/include/socket.h)(0x5D6774BA)
+I (.\wifi\socket/include/socket.h)(0x5E733E38)
 I (.\wifi\common/include/nm_common.h)(0x5E6EF18D)
 I (.\wifi\common/include/nm_debug.h)(0x5D6774BB)
 I (.\wifi\bsp/include/nm_bsp_internal.h)(0x5D6774BD)

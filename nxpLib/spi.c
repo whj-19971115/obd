@@ -252,7 +252,7 @@ uint32_t SpiRecv (uint8_t *rData, int32_t len, uint32_t timeOut_ms)
 //				timeOutSendTemp = timeOutSendTemp;
 //      }
 			
-			LPSPI0->TDR = 0;
+//			LPSPI0->TDR = 0;
 		  LPSPI0->SR |= LPSPI_SR_TDF_MASK; /* Clear TDF flag 				*/
 			//----------------------------------------------------------------------------------
 		  while(((LPSPI0->SR & LPSPI_SR_RDF_MASK)>>LPSPI_SR_RDF_SHIFT==0) || (rxCount == 0)){
